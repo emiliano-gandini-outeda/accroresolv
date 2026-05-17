@@ -1,0 +1,10 @@
+[project]
+name = "acrresolv"
+version = "0.1.0"
+description = "Acronym Resolver"
+readme = "README.md"
+requires-python = ">=3.12.7"
+dependencies = [
+    "cleantext>=1.1.4",
+    "pydantic>=2.13.4",
+]
