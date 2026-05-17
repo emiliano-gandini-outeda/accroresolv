@@ -16,8 +16,8 @@ def get_initials(words: list[str]) -> list[str]:
 def build_acro(initials: list[str]) -> str:
     return "".join(initials)
 
-def rule_based(text: str) -> str:
-    words = clean_origin(text)
+def rule_based(text: str, remove_stopwords : bool) -> str:
+    words = clean_origin(text, remove_stopwords)
     return build_acro(get_initials(words))
 
 def is_confident(acc: str) -> bool:
